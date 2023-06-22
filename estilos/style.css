@@ -210,7 +210,7 @@ div.atividades label, p {
 
 div.atividades input {
     color: var(--cor-white);
-    width: 90%;
+    width: 99%;
     background-color: var(--cor-dark1);
     border: none;
 }
