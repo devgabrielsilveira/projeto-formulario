@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="content">
+        <h1>Formulário de cadastro</h1>
+        <h2>Vaga de desenvolvedor front-end</h2>
+        <form id="form">
+            <div>
+                <input oninput="nameValidate()" class="inputs required" type="text" placeholder="Nome">
+                <span class="span-required">Seu nome deve ter no mínimo 3 caracteres</span>
+            </div>
+            <div>
+                <input oninput="surnameValidate()" class="inputs required" type="text" placeholder="Sobrenome">
+                <span class="span-required">Seu nome deve ter no mínimo 3 caracteres</span>
+            </div>
+            <div>
+                <input oninput="emailValidate()" class="inputs required" type="text" placeholder="Email">
+                <span class="span-required">Digite um email válido</span>
+            </div>
+            <div>
+                <input oninput="celValidate()" class="inputs required" type="number" placeholder="Celular">
+                <span class="span-required">Digite um número válido: (DDD) + número</span>
+            </div>
+
+            <p class="pradio">Você possui experiência com desenvolvimento web?</p>
+            <div class="experiencia-radio">
+                <input type="radio" id="isim" value="sim" name="experienciaradio">
+                <label for="isim">Sim</label>
+                <input type="radio" id="inao" value="sim" name="experienciaradio">
+                <label for="inao">Não</label>
+            </div>
+
+
+            <div class="possui-experiencia">
+                <p>
+                    Se a sua resta foi sim, fale um pouco sobre as três últimas experiências que você teve como desenvolvedor web:
+                </p>
+            </div>
+            <div class="experiencias">
+                <div class="datas">
+                    <p>Data inicial</p>
+                    <p>Data final</p>
+                </div>
+                <div class="data-periodo">
+                    <input type="date" name="" id="">
+                    <input type="date" name="" id="">
+                </div>
+                <div class="atividades">
+                    <label for="iempresa">Empresa:</label>
+                    <input class="input-experiencia" type="text" id="iempresa">
+                </div>
+                <div class="atividades">
+                    <label for="icargo">Cargo:</label>
+                    <input class="input-experiencia" type="text" id="icargo">
+                </div>
+                <div class="atividades-label">
+                    <label for="iatividades">Atividades:</label>
+                    <textarea class="input-experiencia" name="atividades" id="iatividades" cols="60" rows="4"></textarea>
+                </div>
+            </div>
+            <div class="experiencias">
+                <div class="datas">
+                    <p>Data inicial</p>
+                    <p>Data final</p>
+                </div>
+                <div class="data-periodo">
+                    <input type="date" name="" id="">
+                    <input type="date" name="" id="">
+                </div>
+                <div class="atividades">
+                    <label for="iempresa2">Empresa:</label>
+                    <input class="input-experiencia" type="text" id="iempresa2">
+                </div>
+                <div class="atividades">
+                    <label for="icargo2">Cargo:</label>
+                    <input class="input-experiencia" type="text" id="icargo2">
+                </div>
+                <div class="atividades-label">
+                    <label for="iatividades2">Atividades:</label>
+                    <textarea class="input-experiencia" name="atividades" id="iatividades2" cols="60" rows="4"></textarea>
+                </div>
+            </div>
+            <div class="experiencias">
+                <div class="datas">
+                    <p>Data inicial</p>
+                    <p>Data final</p>
+                </div>
+                <div class="data-periodo">
+                    <input type="date" name="" id="">
+                    <input type="date" name="" id="">
+                </div>
+                <div class="atividades">
+                    <label for="iempresa3">Empresa:</label>
+                    <input class="input-experiencia" type="text" id="iempresa3">
+                </div>
+                <div class="atividades">
+                    <label for="icargo3">Cargo:</label>
+                    <input class="input-experiencia" type="text" id="icargo3">
+                </div>
+                <div class="atividades-label">
+                    <label for="iatividades3">Atividades:</label>
+                    <textarea class="input-experiencia" name="atividades" id="iatividades3" cols="60" rows="3"></textarea>
+                </div>
+            </div>
+
+
+            <textarea class="inputs-descreva" name="descricao" id="descricao" cols="25" rows="7" placeholder="Fale sobre as suas competências"></textarea>
+            <p class="pradio">Sexo:</p>
+            <div class="box-select">
+                <div>
+                    <input type="radio" id="m" value="m" name="sexo">
+                    <label for="m">Masculino</label>
+                </div>
+                <div>
+                    <input type="radio" id="f" value="f" name="sexo">
+                    <label for="f">Feminino</label>
+                </div>
+                <div>
+                    <input type="radio" id="o" value="o" name="sexo">
+                    <label for="o">Outro</label>
+                </div>
+            </div>
+                <p class="pradio">Com quais dessas tecnologias você já trabalhou? </p>
+            <div class="box-select">
+                 <div>
+                    <input type="checkbox" id="html" value="html" name="tecnologias">
+                    <label for="html">HTML</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="css" value="css" name="tecnologias">
+                    <label for="css">CSS</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="js" value="js" name="tecnologias">
+                    <label for="js">JavaScript</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="php" value="php" name="tecnologias">
+                    <label for="php">PHP</label>
+                </div>
+            </div>
+            <button type="submit">Enviar candidatura</button>
+        </form>
+    </div>
+</body>
+
+<script src="js/index.js"></script>
+</html>
