@@ -244,13 +244,25 @@ button[type="submit"]:hover {
         max-width: 95%;
     }
 
-
     .box-select {
         flex-direction: column;
         gap: 5px;
     }
 
     body {
-        height: 350vh;
+        height: 340vh;
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 900px) {
+    .content {
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    body {
+        height: 250vh;
     }
 }
